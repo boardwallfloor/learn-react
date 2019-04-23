@@ -35,42 +35,8 @@ class App extends Component {
                         <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
                         <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
                 </div>
-
-           {/* <div class="col s12 m8">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-content">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src={logo}></img>
-                    </div>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div className="center-align">
-                <a class="btn waves-effect waves-light teal"><i class="material-icons">arrow_downward</i></a>
-                </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src={logo}></img>
-                    </div>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div className="center-align">
-                <a class="waves-effect waves-light teal btn"><i class="material-icons">arrow_downward</i></a>
-                </div>
-                </div>
-              </div>
-          </div> */}
-            </div>
-          
-          </div>
-         
-        
+        </div>
+        </div>
         </div>
 
       
