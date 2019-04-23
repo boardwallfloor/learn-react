@@ -32,12 +32,8 @@ class App extends Component {
            </div>
            </div>
            <div className="col m8">
-                    <div className="row">
                         <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
                         <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
-                        <Product judul="Charger Laptop" keterangan="Lorem ipsum sit dolor amet"/>
-                        <Product judul="Charger Motor" keterangan="Lorem ipsum sit dolor amet"/>
-                    </div>
                 </div>
 
            {/* <div class="col s12 m8">
