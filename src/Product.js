@@ -6,7 +6,7 @@ class Product extends Component {
     render() {
         return (
             
-    <div class="col s12 m6">
+    <div class="col s12 m4">
               <div class="card">
                 <div class="card-content">
                     <div class="card-image waves-effect waves-block waves-light">

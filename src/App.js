@@ -31,10 +31,11 @@ class App extends Component {
                 </div> 
            </div>
            </div>
-           <div className="col m8">
-                        <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
-                        <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
-                </div>
+           <div className="col s12 m8">
+            <Product judul="Charger HP" keterangan="Lorem ipsum sit dolor amet"/>
+            <Product judul="Charger HaP" keterangan="Lorem ipsum sit dolor amet"/>
+            <Product judul="Charger HPe" keterangan="Lorem ipsum sit dolor amet"/>
+           </div>
         </div>
         </div>
         </div>
