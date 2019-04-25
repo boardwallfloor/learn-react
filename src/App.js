@@ -8,9 +8,11 @@ class App extends Component {
     super();
     this.state = {
       products : [
-        {judul:"Charger HaPe",keterangan:"Lorem ipsum sit dolor amet"},
-        {judul:"Charger HaP",keterangan:"Lorem ipsum sit dolor amet"},
-        {judul:"Charger HPe",keterangan:"Lorem ipsum sit dolor amet"}
+        {
+          name:"Charger HaPe",
+          desc:"Lorem ipsum sit dolor amet"
+        },
+        
     ]
     }
   }
@@ -22,9 +24,16 @@ class App extends Component {
     let desc = this.refs.desc.value;
     
 
-    console.log(desc ,name);
-  }
+    this.state.products.push({name,desc});
+    this.setState({products: this.state.products});
 
+    this.refs.form.reset();
+  }
+ handleDelete = (key) => {
+      // console.log(key);
+      this.state.products.splice(key,1);
+      this.setState({products: this.state.products});
+  }
   
   
   render() {
@@ -35,30 +44,35 @@ class App extends Component {
           <div className="col s12 m4"> 
             <div className="card">
               <div className="card-content">
-                  <form ref="product-form" onSubmit={this.handleSubmit}>
+
+
+                  <form ref="form" onSubmit={this.handleSubmit}>
                   <div className="row">
                     <div className="input-field col s12">
-                      <input placeholder=" Name" ref="name" type="text"/>
+                      <input placeholder="Name" id="name" ref="name" type="text"/>
                       <label htmlFor="name">Name</label>
                     </div>
                     <div className="input-field col s12">
-                      <input placeholder=" Description" ref="desc" type="text"/>
-                      <label htmlFor="desc">Desc</label>
+                      <input id="desc" placeholder="Description" ref="desc" type="text"/>
+                      <label htmlFor="desc">Description</label>
                     </div>
                     </div>
-                  </form>
-                </div> 
-                <div className="card-action">
-                      <button type="submit" name="action" className="waves-effect waves-light blue btn">
-                        <i className="material-icons left"></i>Submit
+                    <div className="card-action">
+                      <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+                      <i className="material-icons left">send</i>
                       </button>
                 </div>
+                  </form>
+
+
+                </div> 
+                
            </div>
            </div>
            <div className="col s12 m8">
             {this.state.products.map((data,key) =>{
               return (
-                <Product key={key} judul={data.judul} keterangan={data.keterangan}/>
+                <Product handleDelete={() => this.handleDelete(key)} key={key} name={data.name} desc={data.desc}/>
             )
             })}
            </div>

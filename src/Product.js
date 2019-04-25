@@ -12,11 +12,11 @@ class Product extends Component {
                     <div className="card-image waves-effect waves-block waves-light">
                       <img className="activator" alt="icon" src={logo}></img>
                     </div>
-                  <span><b>{this.props.judul}</b></span>
-                  <p>{this.props.keterangan}</p>
+                  <span><b>{this.props.name}</b></span>
+                  <p>{this.props.desc}</p>
                 </div>
                 <div className="center-align">
-                <button className="btn waves-effect waves-light teal"><i className="material-icons">arrow_downward</i></button>
+                <button onClick={this.props.handleDelete} className="btn waves-effect waves-light teal"><i className="material-icons">arrow_downward</i></button>
                 </div>
                 </div>
               </div>
