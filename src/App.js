@@ -16,7 +16,9 @@ class App extends Component {
   }
   
   handleSubmit = (e) => {
-     e.preventDefault();
+
+    e.preventDefault();
+
 
     let name = this.refs.name.value;
     let desc = this.refs.desc.value;
