@@ -16,7 +16,7 @@ class App extends Component {
   }
   
   handleSubmit = (e) => {
-     e.preventDefault();
+    e.preventDefault();
 
     let name = this.refs.name.value;
     let desc = this.refs.desc.value;
@@ -50,7 +50,7 @@ class App extends Component {
                 </div> 
                 <div className="card-action">
                       <button type="submit" name="action" className="waves-effect waves-light blue btn">
-                        <i className="material-icons left">send</i>Submit
+                        <i className="material-icons left"></i>Submit
                       </button>
                 </div>
            </div>
