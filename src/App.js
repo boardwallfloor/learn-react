@@ -25,7 +25,7 @@ class App extends Component {
                     </div>
                     <div className="center-align">
                       <a class="waves-effect waves-light blue btn"><i class="material-icons">airplay</i></a>
-                    </div>
+                 </div>
                     </div>
                   </form>
                 </div> 
