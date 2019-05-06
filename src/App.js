@@ -44,8 +44,6 @@ class App extends Component {
           <div className="col s12 m4"> 
             <div className="card">
               <div className="card-content">
-
-
                   <form ref="form" onSubmit={this.handleSubmit}>
                   <div className="row">
                     <div className="input-field col s12">
